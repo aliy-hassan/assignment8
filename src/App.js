@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './css/style.css';
 
+import Header from './components/header/Header';
+import Section from './components/section/Section';
+import Category from './components/category/Category';
+import About from './components/about/About';
+import TrickAndTreat from './components/trickAndTreat/TrickAndTreat';
+import Discount from './components/discount/Discount';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Section />
+      <Category />
+      <About />
+      <section class="section trick" id="trick">
+        <h2 class="section__title">Trick Or Treat</h2>
+
+        <div class="trick__container container grid">
+          <TrickAndTreat />
+          <TrickAndTreat />
+          <TrickAndTreat />
+          <TrickAndTreat />
+          <TrickAndTreat />
+          <TrickAndTreat />
+        </div>
+      </section>
+      <Discount />
+
     </div>
   );
 }
