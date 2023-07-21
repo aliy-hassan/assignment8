@@ -514,6 +514,10 @@ button{
 }
 
 /*=============== NEW ARRIVALS ===============*/
+.swiper-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .new__container{
   padding-top: 1rem;
 }

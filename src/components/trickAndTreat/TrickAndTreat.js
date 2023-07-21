@@ -1,14 +1,14 @@
 import '../../css/style.css';
-import treat1 from '../../assets/images/trick-treat1-img.png';
-function TrickAndTreat() {
+
+function TrickAndTreat(props) {
     return (
-        <div class="trick__content">
-            <img src={treat1} alt="" class="trick__img" />
-            <h3 class="trick__title">Toffee</h3>
-            <span class="trick__subtitle">Candy</span>
-            <span class="trick__price">$11.99</span>
-            <button class="button trick__button">
-                <i class='bx bx-cart-alt trick__icon'></i>
+        <div className="trick__content">
+            <img src={props.imgSrc} alt="" className="trick__img" />
+            <h3 className="trick__title">{props.cardName}</h3>
+            <span className="trick__subtitle">{props.cardDesc}</span>
+            <span className="trick__price">{props.cardPrice}</span>
+            <button className="button trick__button">
+                <i className='bx bx-cart-alt trick__icon'></i>
             </button>
         </div>
     );
